@@ -8,7 +8,7 @@
 body{
     background-image: url('../About.me/img/2927262.jpg');
     background-size: auto auto;
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
     font-size: 12px;
   }
@@ -53,13 +53,14 @@ header{
   .menu ul {
     display: flex;
     justify-content: space-around;
+    background-color: whitesmoke;
   }
   .menu a{
     display: block;
     padding: 10px 20px;
   }
   a{
-    color: steelblue;
+    color: rgb(0, 110, 255);
     text-decoration: none;
   }
   
@@ -74,16 +75,44 @@ header{
   }
 
   .site-title{
-    font-size: 4em ;
+    font-size: 2em;
+    font-family: 'Parisienne', cursive;
   }
   
   .site-subtitle{
     font-style: italic;
+    font-family: 'VT323', monospace;
+  }
+
+  .portfolio {
+    padding: 2em;
+    height: 100vh;
   }
 
   .img-portfolio {
-    width: 350px;
+    width: 240px;
     height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .grid {
+    display: grid;
+    gap: 5em;
+    padding: 1em;
+  }
+
+  @media (min-width: 700px){
+    .grid {
+      grid-template-columns: 240px 240px;
+      align-content: center;
+      justify-content: center;
+      height: 75vh;
+    }
+  }
+
+  .portfolio figure{
+    text-align: center;
   }
 
   figcaption{
@@ -91,5 +120,7 @@ header{
   }
 
   section h2{
+    font-size: 4em;
     color: steelblue;
+    font-family: 'VT323', monospace;
   }
