@@ -7,7 +7,7 @@
 
 body{
     background-image: url('../About.me/img/background.jpg');
-    background-size: auto 100vh;
+    background-size: auto auto;
     font-family: 'Roboto', sans-serif;
     height: 100vh;
     font-size: 12px;
