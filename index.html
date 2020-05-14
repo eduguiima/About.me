@@ -6,19 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eduardo Guimarães</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto&family=VT323&display=swap"
+    rel="stylesheet">
+   <script src="https://kit.fontawesome.com/1ea1b30cfb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <nav class="menu">
       <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Educação</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Educação</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <div>
+    <div class="titulo">
 
       <h1 class="site-title">Eduardo Guimarães</h1>
 
@@ -27,7 +29,7 @@
     </div>
 
   </header>
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <h2>Educação</h2>
     <div class="grid">
       <figure>
@@ -46,6 +48,23 @@
         <img class="img-portfolio" src="./img/Faculdade.jpeg" alt="Faculdade">
         <figcaption>Faculdade</figcaption>
       </figure>
+    </div>
+  </section>
+  <section class="contato" id="contato">
+    <h2>Contato</h2>
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/eduguiima">
+        <i class="fab fa-github-square"></i>
+      </a>
+      <!--<a target="_blank" href="https://twitter.com/vanessametonini">
+        twitter
+      </a> -->
+      <a target="_blank" href="https://linkedin.com/in/eduardo-guimarães-33403617b/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:eduardo_guimaraes03@outlook.com">
+        <i class="fas fa-envelope-square"></i>
+      </a>
     </div>
   </section>
 </body>

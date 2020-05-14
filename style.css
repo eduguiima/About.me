@@ -44,8 +44,9 @@ header{
     position: fixed;
     width: 100vw;
     top: 0;
-
-  }
+    background-color: white;
+  z-index: 1;
+}
 
   .menu li{
     list-style: none;
@@ -53,12 +54,18 @@ header{
   .menu ul {
     display: flex;
     justify-content: space-around;
-    background-color: whitesmoke;
   }
   .menu a{
     display: block;
     padding: 10px 20px;
+    transition: background-color 1s, color 1s;
   }
+
+  .menu a:hover {
+    background-color: rgb(0, 110, 255);
+    color: whitesmoke;
+  }
+
   a{
     color: rgb(0, 110, 255);
     text-decoration: none;
@@ -73,9 +80,21 @@ header{
     text-align: center;
     color: whitesmoke;
   }
+  .titulo {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+
+    animation: linear 2s animacaoTitulo forwards;
+  }
+
+  @keyframes animacaoTitulo{
+    100%{transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
 
   .site-title{
-    font-size: 2em;
+    font-size: 4em;
     font-family: 'Parisienne', cursive;
   }
   
@@ -84,9 +103,10 @@ header{
     font-family: 'VT323', monospace;
   }
 
+  .contato,
   .portfolio {
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .img-portfolio {
@@ -96,14 +116,19 @@ header{
     border-radius: 5px;
   }
 
-  .grid {
+  .img-portfolio:hover {
+    transform: scale(1.7);
+    transition: transform 500ms;
+  }
+
+  .portfolio .grid {
     display: grid;
     gap: 5em;
     padding: 1em;
   }
 
   @media (min-width: 700px){
-    .grid {
+    .portfolio .grid {
       grid-template-columns: 240px 240px;
       align-content: center;
       justify-content: center;
@@ -119,8 +144,24 @@ header{
     color: white;
   }
 
-  section h2{
+  .contato h2,
+  .portfolio h2{
     font-size: 4em;
     color: steelblue;
     font-family: 'VT323', monospace;
+  }
+  .contato .icons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contato a {
+    color: whitesmoke;
+    font-size: 4em;
+    transition: text-shadow 1s;
+  } 
+  .contato a:active,
+  .contato a:hover {
+    text-decoration: none;
+    text-shadow:0px 0px 35px rgb(0, 110, 255);
   }
