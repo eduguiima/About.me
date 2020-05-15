@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto&family=VT323&display=swap"
     rel="stylesheet">
-   <script src="https://kit.fontawesome.com/1ea1b30cfb.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1ea1b30cfb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <nav class="menu">
-      <ul>
+      <ul class="container">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#portfolio">Educação</a></li>
         <li><a href="#contato">Contato</a></li>
@@ -29,28 +29,73 @@
     </div>
 
   </header>
-  <section class="portfolio" id="portfolio">
+  <section class="sobre container" id="sobre">
+    <h2>Sobre</h2>
+
+    <figure class="avatar">
+      <img src="../About.me/img/EU.jpeg" alt="Eduardo Guimarães">
+    </figure>
+
+  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut ipsa dolorem exercitationem ducimus dolore labore assumenda molestias illum voluptates ratione recusandae quasi, similique, totam dolorum suscipit iusto doloribus ex!
+  </p>
+
+  <p>Ut, placeat perspiciatis, vel adipisci unde molestiae mollitia repellat porro quod omnis error veniam repellendus nulla et, blanditiis eveniet! Consequuntur consectetur beatae, eum eaque illum eveniet nam dolore recusandae quae.
+  </p>
+
+  <p>A maiores et expedita sed, sequi debitis laborum minus! Asperiores voluptatibus molestias eaque a nam quidem. Eius enim provident unde nemo, reiciendis non natus culpa molestiae voluptate delectus iste praesentium?
+  </p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolor recusandae magnam provident eligendi dolorum ipsam animi nostrum quidem possimus culpa non ratione, exercitationem fuga fugiat perspiciatis eius aut nulla?</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita voluptate quaerat sapiente asperiores! Vel, tempora iure dicta excepturi doloremque corrupti repellendus molestiae, itaque consequuntur amet quasi a fugit possimus consectetur.</p>
+
+  <p>Esse site foi construido durante a <a href="http://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> ;
+  </p>
+
+  </section>
+  <section class="portfolio container" id="portfolio">
     <h2>Educação</h2>
     <div class="grid">
-      <figure>
-        <img class="img-portfolio" src="./img/Html.jpeg" alt="Html">
-        <figcaption>Html</figcaption>
+
+     <div class="flip-card"> 
+       <div class="card">
+      <figure class="card-front">
+        <img class="img-portfolio" src="./img/Faculdade.jpeg" alt="Faculdade">
+        <figcaption>Faculdade</figcaption>
       </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/JS.png" alt=">JavaScript">
-        <figcaption>JavaScript</figcaption>
-      </figure>
+
+      <div class="card-back">
+        Local no qual eu comecei minha graduação 
+      </div>
+    </div>
+  </div>
+
+      <div class="flip-card">
+        <div class="card"> 
+          <figure class="card-front">
+           <img class="img-portfolio" src="./img/Html.jpeg" alt="Html">
+           <figcaption>Html</figcaption>
+          </figure>
+  
+          <div class="card-back">
+           Elemento de desenvolvimento que estou aprendendo
+          </div>
+        </div>
+      </div>
+      
       <figure>
         <img class="img-portfolio" src="./img/CSS.png" alt="Css">
         <figcaption>Css</figcaption>
       </figure>
+      
       <figure>
-        <img class="img-portfolio" src="./img/Faculdade.jpeg" alt="Faculdade">
-        <figcaption>Faculdade</figcaption>
+        <img class="img-portfolio" src="./img/JS.png" alt=">JavaScript">
+        <figcaption>JavaScript</figcaption>
       </figure>
+
     </div>
   </section>
-  <section class="contato" id="contato">
+  <section class="contato container" id="contato">
     <h2>Contato</h2>
     <div class="grid icons">
       <a target="_blank" href="https://github.com/eduguiima">
